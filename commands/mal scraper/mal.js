@@ -53,7 +53,7 @@ const Description = async (name, type) => {
             description = description.slice(0, description.length - 2) + ' *' + desc['children'][0]['data'] + '*';
           }    
         }
-        resolve(description + 'Description fount at ' + rUrl);
+        resolve(description + 'Description found at ' + rUrl);
       })
       .catch((err) => {
         console.log(err);
