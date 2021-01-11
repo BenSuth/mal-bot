@@ -32,7 +32,6 @@ const Random = (type) => {
 
 const Description = async (name, type) => {
   const rUrl = await Search(name, type);
-  console.log(rUrl);
 
   const tag = (type == 'anime') ? 'p' : 'span';
   return new Promise((resolve, reject) => {
